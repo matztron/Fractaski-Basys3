@@ -1,3 +1,9 @@
 [submodule "submodules/BRISKI"]
 	path = submodules/BRISKI
 	url = https://github.com/riadhbenabdelhamid/BRISKI.git
+[submodule "submodules/submodules/BRISKI-Basys3"]
+	path = submodules/submodules/BRISKI-Basys3
+	url = git@github.com:matztron/BRISKI-Basys3.git
+[submodule "submodules/BRISKI-Basys3"]
+	path = submodules/BRISKI-Basys3
+	url = git@github.com:matztron/BRISKI-Basys3.git
