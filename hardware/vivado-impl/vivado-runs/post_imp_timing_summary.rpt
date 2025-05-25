@@ -1,0 +1,938 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Sat May 24 15:45:49 2025
+| Host         : debian running 64-bit Debian GNU/Linux 12 (bookworm)
+| Command      : report_timing_summary -file ../vivado-runs/post_imp_timing_summary.rpt
+| Design       : fpga
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity  Description                                 Violations  
+---------  --------  ------------------------------------------  ----------  
+LUTAR-1    Warning   LUT drives async reset alert                32          
+SYNTH-6    Warning   Timing of a RAM block might be sub-optimal  32          
+TIMING-18  Warning   Missing input or output delay               1           
+TIMING-20  Warning   Non-clocked latch                           256         
+LATCH-1    Advisory  Existing latches in the design              1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (1264)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (512)
+5. checking no_input_delay (1)
+6. checking no_output_delay (14)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (1264)
+---------------------------
+ There are 16 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[0].core_inst/RISCV_core_inst/lr_pipe_inst/with_reset.n_is_1_reset.pipeline_stages_reg[0][0]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_valid_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[0].core_inst/RISCV_core_inst/thread_index_stage_reg[2][0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[0].core_inst/RISCV_core_inst/thread_index_stage_reg[2][1]/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/lr_pipe_inst/with_reset.n_is_1_reset.pipeline_stages_reg[0][0]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_valid_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/thread_index_stage_reg[2][0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/thread_index_stage_reg[2][1]/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/lr_pipe_inst/with_reset.n_is_1_reset.pipeline_stages_reg[0][0]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_valid_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/thread_index_stage_reg[2][0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/thread_index_stage_reg[2][1]/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[3].core_inst/RISCV_core_inst/lr_pipe_inst/with_reset.n_is_1_reset.pipeline_stages_reg[0][0]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_valid_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[3].core_inst/RISCV_core_inst/thread_index_stage_reg[2][0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[0].col_gen[3].core_inst/RISCV_core_inst/thread_index_stage_reg[2][1]/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/lr_pipe_inst/with_reset.n_is_1_reset.pipeline_stages_reg[0][0]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_valid_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/thread_index_stage_reg[2][0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/thread_index_stage_reg[2][1]/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[1].core_inst/RISCV_core_inst/lr_pipe_inst/with_reset.n_is_1_reset.pipeline_stages_reg[0][0]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_valid_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[1].core_inst/RISCV_core_inst/thread_index_stage_reg[2][0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[1].core_inst/RISCV_core_inst/thread_index_stage_reg[2][1]/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[2].core_inst/RISCV_core_inst/lr_pipe_inst/with_reset.n_is_1_reset.pipeline_stages_reg[0][0]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_valid_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[2].core_inst/RISCV_core_inst/thread_index_stage_reg[2][0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[2].core_inst/RISCV_core_inst/thread_index_stage_reg[2][1]/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[3].core_inst/RISCV_core_inst/lr_pipe_inst/with_reset.n_is_1_reset.pipeline_stages_reg[0][0]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_valid_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[3].core_inst/RISCV_core_inst/thread_index_stage_reg[2][0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[1].col_gen[3].core_inst/RISCV_core_inst/thread_index_stage_reg[2][1]/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/lr_pipe_inst/with_reset.n_is_1_reset.pipeline_stages_reg[0][0]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_valid_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/thread_index_stage_reg[2][0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/thread_index_stage_reg[2][1]/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/lr_pipe_inst/with_reset.n_is_1_reset.pipeline_stages_reg[0][0]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_valid_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/thread_index_stage_reg[2][0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/thread_index_stage_reg[2][1]/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[2].core_inst/RISCV_core_inst/lr_pipe_inst/with_reset.n_is_1_reset.pipeline_stages_reg[0][0]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_valid_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[2].core_inst/RISCV_core_inst/thread_index_stage_reg[2][0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[2].core_inst/RISCV_core_inst/thread_index_stage_reg[2][1]/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/lr_pipe_inst/with_reset.n_is_1_reset.pipeline_stages_reg[0][0]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_valid_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/thread_index_stage_reg[2][0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/thread_index_stage_reg[2][1]/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/lr_pipe_inst/with_reset.n_is_1_reset.pipeline_stages_reg[0][0]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_valid_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/thread_index_stage_reg[2][0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/thread_index_stage_reg[2][1]/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[1].core_inst/RISCV_core_inst/lr_pipe_inst/with_reset.n_is_1_reset.pipeline_stages_reg[0][0]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_valid_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[1].core_inst/RISCV_core_inst/thread_index_stage_reg[2][0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[1].core_inst/RISCV_core_inst/thread_index_stage_reg[2][1]/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[2].core_inst/RISCV_core_inst/lr_pipe_inst/with_reset.n_is_1_reset.pipeline_stages_reg[0][0]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_valid_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[2].core_inst/RISCV_core_inst/thread_index_stage_reg[2][0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[2].core_inst/RISCV_core_inst/thread_index_stage_reg[2][1]/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/lr_pipe_inst/with_reset.n_is_1_reset.pipeline_stages_reg[0][0]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_valid_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/thread_index_stage_reg[2][0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/thread_index_stage_reg[2][1]/Q (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (512)
+--------------------------------------------------
+ There are 512 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (1)
+------------------------------
+ There is 1 input port with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (14)
+--------------------------------
+ There are 14 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.541        0.000                      0                30489        0.022        0.000                      0                30489        3.000        0.000                       0                  7533  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                 Waveform(ns)       Period(ns)      Frequency(MHz)
+-----                 ------------       ----------      --------------
+sys_clk_pin           {0.000 5.000}      10.000          100.000         
+  clkfbout_clk_wiz_0  {0.000 5.000}      10.000          100.000         
+  clkout0             {0.000 5.000}      10.000          100.000         
+  clkout1             {0.000 12.500}     25.000          40.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin                                                                                                                                                             3.000        0.000                       0                     2  
+  clkfbout_clk_wiz_0                                                                                                                                                    7.845        0.000                       0                     3  
+  clkout0                   0.541        0.000                      0                30197        0.022        0.000                      0                30197        3.750        0.000                       0                  7431  
+  clkout1                  16.438        0.000                      0                  260        0.196        0.000                      0                  260       12.000        0.000                       0                    97  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+clkout0       clkout1             0.844        0.000                      0                   43        0.311        0.000                      0                   43  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     BUFG/I             n/a            2.155         10.000      7.845      BUFGCTRL_X0Y4    MMCM_clock_gen_inst/clkin1_ibufg/I
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y0  MMCM_clock_gen_inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  MMCM_clock_gen_inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  MMCM_clock_gen_inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_clk_wiz_0
+  To Clock:  clkfbout_clk_wiz_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        7.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_clk_wiz_0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { MMCM_clock_gen_inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            2.155         10.000      7.845      BUFGCTRL_X0Y3    MMCM_clock_gen_inst/clkf_buf/I
+Max Period  n/a     MMCME2_ADV/CLKFBIN  n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y0  MMCM_clock_gen_inst/mmcm_adv_inst/CLKFBIN
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkout0
+  To Clock:  clkout0
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.541ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.022ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.750ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.541ns  (required time - arrival time)
+  Source:                 cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/reg_hart_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clkout0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clkout0 rise@10.000ns - clkout0 rise@0.000ns)
+  Data Path Delay:        9.308ns  (logic 1.944ns (20.886%)  route 7.364ns (79.114%))
+  Logic Levels:           12  (LUT2=1 LUT3=2 LUT4=1 LUT5=1 LUT6=7)
+  Clock Path Skew:        -0.107ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.792ns = ( 14.792 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.159ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.074ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.129ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    MMCM_clock_gen_inst/CLKIN1
+    BUFGCTRL_X0Y4        BUFG (Prop_bufg_I_O)         0.096     3.521 r  MMCM_clock_gen_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.575     5.096    MMCM_clock_gen_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.333     1.763 r  MMCM_clock_gen_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661     3.425    MMCM_clock_gen_inst/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  MMCM_clock_gen_inst/clkout0_buf/O
+                         net (fo=7429, routed)        1.638     5.159    cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/clk
+    SLICE_X58Y48         FDRE                                         r  cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X58Y48         FDRE (Prop_fdre_C_Q)         0.456     5.615 r  cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/Q
+                         net (fo=32, routed)          0.779     6.394    cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/mux2to1_aluop2_inst/i_sel
+    SLICE_X57Y48         LUT3 (Prop_lut3_I1_O)        0.124     6.518 r  cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/mux2to1_aluop2_inst/o_muxout[3]_INST_0/O
+                         net (fo=73, routed)          1.526     8.044    cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/alu_dsp_not_enabled.ALU_inst/i_op2[3]
+    SLICE_X60Y50         LUT6 (Prop_lut6_I3_O)        0.124     8.168 f  cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/alu_dsp_not_enabled.ALU_inst/o_result[6]_INST_0_i_5/O
+                         net (fo=3, routed)           0.577     8.745    cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/alu_dsp_not_enabled.ALU_inst/o_result[6]_INST_0_i_5_n_0
+    SLICE_X60Y49         LUT6 (Prop_lut6_I5_O)        0.124     8.869 f  cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/alu_dsp_not_enabled.ALU_inst/o_result[2]_INST_0_i_10/O
+                         net (fo=1, routed)           0.303     9.172    cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/alu_dsp_not_enabled.ALU_inst/o_result[2]_INST_0_i_10_n_0
+    SLICE_X60Y48         LUT6 (Prop_lut6_I0_O)        0.124     9.296 f  cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/alu_dsp_not_enabled.ALU_inst/o_result[2]_INST_0_i_6/O
+                         net (fo=2, routed)           0.318     9.614    cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/alu_dsp_not_enabled.ALU_inst/o_result[2]_INST_0_i_6_n_0
+    SLICE_X60Y46         LUT6 (Prop_lut6_I3_O)        0.124     9.738 f  cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/alu_dsp_not_enabled.ALU_inst/o_result[1]_INST_0_i_2/O
+                         net (fo=2, routed)           0.300    10.039    cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/lopt_12
+    SLICE_X59Y45         LUT6 (Prop_lut6_I4_O)        0.124    10.163 f  cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/i_5_LOPT_REMAP/O
+                         net (fo=1, routed)           0.582    10.744    cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/i_5/O_n
+    SLICE_X61Y44         LUT5 (Prop_lut5_I2_O)        0.124    10.868 f  cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/i_0_LOPT_REMAP/O
+                         net (fo=5, routed)           0.448    11.316    cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/store_unit_inst/i_addr[0]
+    SLICE_X61Y43         LUT2 (Prop_lut2_I1_O)        0.124    11.440 r  cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/store_unit_inst/o_data[31]_INST_0_i_1/O
+                         net (fo=34, routed)          0.500    11.940    cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/store_unit_inst/o_data[31]_INST_0_i_1_n_0
+    SLICE_X59Y43         LUT6 (Prop_lut6_I0_O)        0.124    12.064 r  cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/store_unit_inst/o_we[2]_INST_0/O
+                         net (fo=3, routed)           0.477    12.541    cores_wrapper/row_gen[3].col_gen[0].core_inst/RVcore_wr_en[2]
+    SLICE_X58Y43         LUT4 (Prop_lut4_I3_O)        0.124    12.665 r  cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst_i_1/O
+                         net (fo=5, routed)           0.996    13.661    cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/i_mmio_wen
+    SLICE_X55Y42         LUT3 (Prop_lut3_I0_O)        0.124    13.785 r  cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/reg3_rw_i_3/O
+                         net (fo=6, routed)           0.558    14.343    cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/reg3_rw_i_3_n_0
+    SLICE_X55Y41         LUT6 (Prop_lut6_I4_O)        0.124    14.467 r  cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/reg_hart[1]_i_1/O
+                         net (fo=1, routed)           0.000    14.467    cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/reg_hart[1]_i_1_n_0
+    SLICE_X55Y41         FDRE                                         r  cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/reg_hart_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)   10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    MMCM_clock_gen_inst/CLKIN1
+    BUFGCTRL_X0Y4        BUFG (Prop_bufg_I_O)         0.091    13.341 r  MMCM_clock_gen_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.457    14.798    MMCM_clock_gen_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.129    11.669 r  MMCM_clock_gen_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    13.250    MMCM_clock_gen_inst/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  MMCM_clock_gen_inst/clkout0_buf/O
+                         net (fo=7429, routed)        1.451    14.792    cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/clk
+    SLICE_X55Y41         FDRE                                         r  cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/reg_hart_reg[1]/C
+                         clock pessimism              0.260    15.052    
+                         clock uncertainty           -0.074    14.979    
+    SLICE_X55Y41         FDRE (Setup_fdre_C_D)        0.029    15.008    cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/reg_hart_reg[1]
+  -------------------------------------------------------------------
+                         required time                         15.008    
+                         arrival time                         -14.467    
+  -------------------------------------------------------------------
+                         slack                                  0.541    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.022ns  (arrival time - required time)
+  Source:                 cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/regfile_wa_pipe_inst/without_reset.n_is_2.pipeline_stages_reg[1][3]/C
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/MEM_reg_0_63_24_26/RAMA/WADR3
+                            (rising edge-triggered cell RAMD64E clocked by clkout0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clkout0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clkout0 rise@0.000ns - clkout0 rise@0.000ns)
+  Data Path Delay:        0.275ns  (logic 0.141ns (51.216%)  route 0.134ns (48.784%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.962ns
+    Source Clock Delay      (SCD):    1.448ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    MMCM_clock_gen_inst/CLKIN1
+    BUFGCTRL_X0Y4        BUFG (Prop_bufg_I_O)         0.026     0.884 r  MMCM_clock_gen_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.549     1.432    MMCM_clock_gen_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.061     0.372 r  MMCM_clock_gen_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486     0.858    MMCM_clock_gen_inst/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  MMCM_clock_gen_inst/clkout0_buf/O
+                         net (fo=7429, routed)        0.565     1.448    cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/regfile_wa_pipe_inst/clk
+    SLICE_X13Y41         FDRE                                         r  cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/regfile_wa_pipe_inst/without_reset.n_is_2.pipeline_stages_reg[1][3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y41         FDRE (Prop_fdre_C_Q)         0.141     1.589 r  cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/regfile_wa_pipe_inst/without_reset.n_is_2.pipeline_stages_reg[1][3]/Q
+                         net (fo=220, routed)         0.134     1.723    cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/MEM_reg_0_63_24_26/ADDRD3
+    SLICE_X12Y41         RAMD64E                                      r  cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/MEM_reg_0_63_24_26/RAMA/WADR3
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    MMCM_clock_gen_inst/CLKIN1
+    BUFGCTRL_X0Y4        BUFG (Prop_bufg_I_O)         0.029     1.128 r  MMCM_clock_gen_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.817     1.944    MMCM_clock_gen_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.375     0.569 r  MMCM_clock_gen_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530     1.099    MMCM_clock_gen_inst/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  MMCM_clock_gen_inst/clkout0_buf/O
+                         net (fo=7429, routed)        0.835     1.962    cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/MEM_reg_0_63_24_26/WCLK
+    SLICE_X12Y41         RAMD64E                                      r  cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/MEM_reg_0_63_24_26/RAMA/CLK
+                         clock pessimism             -0.501     1.461    
+    SLICE_X12Y41         RAMD64E (Hold_ramd64e_CLK_WADR3)
+                                                      0.240     1.701    cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/MEM_reg_0_63_24_26/RAMA
+  -------------------------------------------------------------------
+                         required time                         -1.701    
+                         arrival time                           1.723    
+  -------------------------------------------------------------------
+                         slack                                  0.022    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkout0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { MMCM_clock_gen_inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB36_X1Y7      cores_wrapper/row_gen[0].col_gen[0].core_inst/instr_and_data_mem/RAM_reg/CLKARDCLK
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       10.000      203.360    MMCME2_ADV_X1Y0  MMCM_clock_gen_inst/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X46Y34     cores_wrapper/row_gen[0].col_gen[0].core_inst/RISCV_core_inst/reg_program_counter_inst/PC_MEM_INST/MEM_reg_0_3_0_5/RAMA/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X46Y34     cores_wrapper/row_gen[0].col_gen[0].core_inst/RISCV_core_inst/reg_program_counter_inst/PC_MEM_INST/MEM_reg_0_3_0_5/RAMA/CLK
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkout1
+  To Clock:  clkout1
+
+Setup :            0  Failing Endpoints,  Worst Slack       16.438ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.196ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       12.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             16.438ns  (required time - arrival time)
+  Source:                 cores_wrapper/row_gen[1].col_gen[2].core_inst/vram_mem/RAM_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by clkout1  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vga_controller_inst/pixel_data_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by clkout1  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clkout1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clkout1 rise@25.000ns - clkout1 rise@0.000ns)
+  Data Path Delay:        8.471ns  (logic 2.826ns (33.361%)  route 5.645ns (66.639%))
+  Logic Levels:           3  (LUT6=3)
+  Clock Path Skew:        -0.085ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.786ns = ( 29.786 - 25.000 ) 
+    Source Clock Delay      (SCD):    5.132ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.085ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.154ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout1 rise edge)    0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    MMCM_clock_gen_inst/CLKIN1
+    BUFGCTRL_X0Y4        BUFG (Prop_bufg_I_O)         0.096     3.521 r  MMCM_clock_gen_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.575     5.096    MMCM_clock_gen_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.333     1.763 r  MMCM_clock_gen_inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.661     3.425    MMCM_clock_gen_inst/clkout1
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.096     3.521 r  MMCM_clock_gen_inst/clkout1_buf/O
+                         net (fo=95, routed)          1.611     5.132    cores_wrapper/row_gen[1].col_gen[2].core_inst/vram_mem/clkb
+    RAMB36_X0Y1          RAMB36E1                                     r  cores_wrapper/row_gen[1].col_gen[2].core_inst/vram_mem/RAM_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y1          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[23])
+                                                      2.454     7.586 r  cores_wrapper/row_gen[1].col_gen[2].core_inst/vram_mem/RAM_reg/DOADO[23]
+                         net (fo=1, routed)           1.306     8.892    cores_wrapper/row_gen[1].col_gen[2].core_inst/VRAM_rd_data_vga[23]
+    SLICE_X9Y9           LUT6 (Prop_lut6_I1_O)        0.124     9.016 r  cores_wrapper/row_gen[1].col_gen[2].core_inst/o_VRAM_rd_data[7]_INST_0/O
+                         net (fo=1, routed)           2.025    11.041    cores_wrapper/p_5_in[7]
+    SLICE_X51Y13         LUT6 (Prop_lut6_I1_O)        0.124    11.165 r  cores_wrapper/global_rd_data[7]_INST_0_i_3/O
+                         net (fo=1, routed)           2.314    13.479    cores_wrapper/row_mux[1][7]
+    SLICE_X30Y43         LUT6 (Prop_lut6_I3_O)        0.124    13.603 r  cores_wrapper/global_rd_data[7]_INST_0/O
+                         net (fo=1, routed)           0.000    13.603    vga_controller_inst/VRAM_data[7]
+    SLICE_X30Y43         FDRE                                         r  vga_controller_inst/pixel_data_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout1 rise edge)   25.000    25.000 r  
+    W5                                                0.000    25.000 r  clk (IN)
+                         net (fo=0)                   0.000    25.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    26.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    28.250    MMCM_clock_gen_inst/CLKIN1
+    BUFGCTRL_X0Y4        BUFG (Prop_bufg_I_O)         0.091    28.341 r  MMCM_clock_gen_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.457    29.798    MMCM_clock_gen_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.129    26.669 r  MMCM_clock_gen_inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.581    28.250    MMCM_clock_gen_inst/clkout1
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.091    28.341 r  MMCM_clock_gen_inst/clkout1_buf/O
+                         net (fo=95, routed)          1.445    29.786    vga_controller_inst/clk
+    SLICE_X30Y43         FDRE                                         r  vga_controller_inst/pixel_data_reg[7]/C
+                         clock pessimism              0.260    30.046    
+                         clock uncertainty           -0.085    29.962    
+    SLICE_X30Y43         FDRE (Setup_fdre_C_D)        0.079    30.041    vga_controller_inst/pixel_data_reg[7]
+  -------------------------------------------------------------------
+                         required time                         30.041    
+                         arrival time                         -13.603    
+  -------------------------------------------------------------------
+                         slack                                 16.438    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.196ns  (arrival time - required time)
+  Source:                 vga_controller_inst/v_count_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by clkout1  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vga_controller_inst/v_count_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by clkout1  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clkout1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clkout1 rise@0.000ns - clkout1 rise@0.000ns)
+  Data Path Delay:        0.317ns  (logic 0.246ns (77.542%)  route 0.071ns (22.458%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.959ns
+    Source Clock Delay      (SCD):    1.446ns
+    Clock Pessimism Removal (CPR):    0.513ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout1 rise edge)    0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    MMCM_clock_gen_inst/CLKIN1
+    BUFGCTRL_X0Y4        BUFG (Prop_bufg_I_O)         0.026     0.884 r  MMCM_clock_gen_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.549     1.432    MMCM_clock_gen_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.061     0.372 r  MMCM_clock_gen_inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.486     0.858    MMCM_clock_gen_inst/clkout1
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.026     0.884 r  MMCM_clock_gen_inst/clkout1_buf/O
+                         net (fo=95, routed)          0.563     1.446    vga_controller_inst/clk
+    SLICE_X30Y45         FDRE                                         r  vga_controller_inst/v_count_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y45         FDRE (Prop_fdre_C_Q)         0.148     1.594 r  vga_controller_inst/v_count_reg[8]/Q
+                         net (fo=4, routed)           0.071     1.665    vga_controller_inst/v_count_reg_n_0_[8]
+    SLICE_X30Y45         LUT6 (Prop_lut6_I4_O)        0.098     1.763 r  vga_controller_inst/v_count[9]_i_2/O
+                         net (fo=1, routed)           0.000     1.763    vga_controller_inst/v_count[9]_i_2_n_0
+    SLICE_X30Y45         FDRE                                         r  vga_controller_inst/v_count_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout1 rise edge)    0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    MMCM_clock_gen_inst/CLKIN1
+    BUFGCTRL_X0Y4        BUFG (Prop_bufg_I_O)         0.029     1.128 r  MMCM_clock_gen_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.817     1.944    MMCM_clock_gen_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.375     0.569 r  MMCM_clock_gen_inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.530     1.099    MMCM_clock_gen_inst/clkout1
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.029     1.128 r  MMCM_clock_gen_inst/clkout1_buf/O
+                         net (fo=95, routed)          0.832     1.959    vga_controller_inst/clk
+    SLICE_X30Y45         FDRE                                         r  vga_controller_inst/v_count_reg[9]/C
+                         clock pessimism             -0.513     1.446    
+    SLICE_X30Y45         FDRE (Hold_fdre_C_D)         0.121     1.567    vga_controller_inst/v_count_reg[9]
+  -------------------------------------------------------------------
+                         required time                         -1.567    
+                         arrival time                           1.763    
+  -------------------------------------------------------------------
+                         slack                                  0.196    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkout1
+Waveform(ns):       { 0.000 12.500 }
+Period(ns):         25.000
+Sources:            { MMCM_clock_gen_inst/mmcm_adv_inst/CLKOUT1 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         25.000      22.424     RAMB36_X1Y6      cores_wrapper/row_gen[0].col_gen[0].core_inst/vram_mem/RAM_reg/CLKARDCLK
+Max Period        n/a     MMCME2_ADV/CLKOUT1  n/a            213.360       25.000      188.360    MMCME2_ADV_X1Y0  MMCM_clock_gen_inst/mmcm_adv_inst/CLKOUT1
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         12.500      12.000     SLICE_X29Y42     VGA_B_reg[0]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         12.500      12.000     SLICE_X29Y42     VGA_B_reg[0]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkout0
+  To Clock:  clkout1
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.844ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.311ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.844ns  (required time - arrival time)
+  Source:                 sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            VGA_VS_reg/R
+                            (rising edge-triggered cell FDRE clocked by clkout1  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clkout1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (clkout1 rise@25.000ns - clkout0 rise@20.000ns)
+  Data Path Delay:        3.224ns  (logic 0.688ns (21.338%)  route 2.536ns (78.662%))
+  Logic Levels:           1  (BUFG=1)
+  Clock Path Skew:        -0.203ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.786ns = ( 29.786 - 25.000 ) 
+    Source Clock Delay      (SCD):    5.084ns = ( 25.084 - 20.000 ) 
+    Clock Pessimism Removal (CPR):    0.095ns
+  Clock Uncertainty:      0.205ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.154ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)   20.000    20.000 r  
+    W5                                                0.000    20.000 r  clk (IN)
+                         net (fo=0)                   0.000    20.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458    21.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967    23.425    MMCM_clock_gen_inst/CLKIN1
+    BUFGCTRL_X0Y4        BUFG (Prop_bufg_I_O)         0.096    23.521 r  MMCM_clock_gen_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.575    25.096    MMCM_clock_gen_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.333    21.763 r  MMCM_clock_gen_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    23.425    MMCM_clock_gen_inst/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    23.521 r  MMCM_clock_gen_inst/clkout0_buf/O
+                         net (fo=7429, routed)        1.563    25.084    sync_reset_gen_inst/clk
+    SLICE_X35Y42         FDRE                                         r  sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y42         FDRE (Prop_fdre_C_Q)         0.419    25.503 r  sync_reset_gen_inst/reset_sync3_reg_lopt_replica/Q
+                         net (fo=1, routed)           0.766    26.269    sync_reset_gen_inst/Q_replN
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.269    26.538 r  sync_reset_gen_inst/glob_buf_sync_reset/O
+                         net (fo=1553, routed)        1.770    28.309    proc_rst
+    SLICE_X30Y46         FDRE                                         r  VGA_VS_reg/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout1 rise edge)   25.000    25.000 r  
+    W5                                                0.000    25.000 r  clk (IN)
+                         net (fo=0)                   0.000    25.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    26.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    28.250    MMCM_clock_gen_inst/CLKIN1
+    BUFGCTRL_X0Y4        BUFG (Prop_bufg_I_O)         0.091    28.341 r  MMCM_clock_gen_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.457    29.798    MMCM_clock_gen_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.129    26.669 r  MMCM_clock_gen_inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.581    28.250    MMCM_clock_gen_inst/clkout1
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.091    28.341 r  MMCM_clock_gen_inst/clkout1_buf/O
+                         net (fo=95, routed)          1.445    29.786    clkout1
+    SLICE_X30Y46         FDRE                                         r  VGA_VS_reg/C
+                         clock pessimism              0.095    29.881    
+                         clock uncertainty           -0.205    29.676    
+    SLICE_X30Y46         FDRE (Setup_fdre_C_R)       -0.524    29.152    VGA_VS_reg
+  -------------------------------------------------------------------
+                         required time                         29.152    
+                         arrival time                         -28.309    
+  -------------------------------------------------------------------
+                         slack                                  0.844    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.311ns  (arrival time - required time)
+  Source:                 sync_reset_gen_inst/reset_sync3_reg/C
+                            (rising edge-triggered cell FDRE clocked by clkout0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vga_controller_inst/h_count_reg[3]/R
+                            (rising edge-triggered cell FDRE clocked by clkout1  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clkout1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clkout1 rise@0.000ns - clkout0 rise@0.000ns)
+  Data Path Delay:        0.818ns  (logic 0.186ns (22.748%)  route 0.632ns (77.252%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.320ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.961ns
+    Source Clock Delay      (SCD):    1.444ns
+    Clock Pessimism Removal (CPR):    0.198ns
+  Clock Uncertainty:      0.205ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.154ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clkout0 rise edge)    0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    MMCM_clock_gen_inst/CLKIN1
+    BUFGCTRL_X0Y4        BUFG (Prop_bufg_I_O)         0.026     0.884 r  MMCM_clock_gen_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.549     1.432    MMCM_clock_gen_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.061     0.372 r  MMCM_clock_gen_inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486     0.858    MMCM_clock_gen_inst/clkout0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  MMCM_clock_gen_inst/clkout0_buf/O
+                         net (fo=7429, routed)        0.561     1.444    sync_reset_gen_inst/clk
+    SLICE_X35Y42         FDRE                                         r  sync_reset_gen_inst/reset_sync3_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y42         FDRE (Prop_fdre_C_Q)         0.141     1.585 r  sync_reset_gen_inst/reset_sync3_reg/Q
+                         net (fo=33, routed)          0.486     2.071    vga_controller_inst/lopt
+    SLICE_X29Y46         LUT2 (Prop_lut2_I1_O)        0.045     2.116 r  vga_controller_inst/h_count[10]_i_1/O
+                         net (fo=11, routed)          0.145     2.262    vga_controller_inst/h_count[10]_i_1_n_0
+    SLICE_X29Y47         FDRE                                         r  vga_controller_inst/h_count_reg[3]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clkout1 rise edge)    0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    MMCM_clock_gen_inst/CLKIN1
+    BUFGCTRL_X0Y4        BUFG (Prop_bufg_I_O)         0.029     1.128 r  MMCM_clock_gen_inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.817     1.944    MMCM_clock_gen_inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.375     0.569 r  MMCM_clock_gen_inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.530     1.099    MMCM_clock_gen_inst/clkout1
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.029     1.128 r  MMCM_clock_gen_inst/clkout1_buf/O
+                         net (fo=95, routed)          0.834     1.961    vga_controller_inst/clk
+    SLICE_X29Y47         FDRE                                         r  vga_controller_inst/h_count_reg[3]/C
+                         clock pessimism             -0.198     1.764    
+                         clock uncertainty            0.205     1.968    
+    SLICE_X29Y47         FDRE (Hold_fdre_C_R)        -0.018     1.950    vga_controller_inst/h_count_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.950    
+                         arrival time                           2.262    
+  -------------------------------------------------------------------
+                         slack                                  0.311    
+
+
+
+
+

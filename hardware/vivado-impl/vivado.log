@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat May 24 16:12:20 2025
+# Process ID         : 110490
+# Current directory  : /home/matthias/fpga_projects/Fractaski-Basys3/hardware/vivado-impl
+# Command line       : vivado
+# Log file           : /home/matthias/fpga_projects/Fractaski-Basys3/hardware/vivado-impl/vivado.log
+# Journal file       : /home/matthias/fpga_projects/Fractaski-Basys3/hardware/vivado-impl/vivado.jou
+# Running On         : debian
+# Platform           : Debian
+# Operating System   : Debian GNU/Linux 12 (bookworm)
+# Processor Detail   : AMD Ryzen 5 3600 6-Core Processor
+# CPU Frequency      : 2803.318 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16707 MB
+# Swap memory        : 1022 MB
+# Total Virtual      : 17730 MB
+# Available Virtual  : 13347 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_checkpoint /home/matthias/fpga_projects/Fractaski-Basys3/hardware/vivado-impl/vivado-runs/post_route.dcp
+Command: open_checkpoint /home/matthias/fpga_projects/Fractaski-Basys3/hardware/vivado-impl/vivado-runs/post_route.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 7651.805 ; gain = 0.000 ; free physical = 7590 ; free virtual = 11860
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 7958.188 ; gain = 0.000 ; free physical = 7352 ; free virtual = 11628
+INFO: [Netlist 29-17] Analyzing 1089 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 8046.766 ; gain = 5.000 ; free physical = 7253 ; free virtual = 11529
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8639.848 ; gain = 0.000 ; free physical = 6707 ; free virtual = 10983
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8639.848 ; gain = 0.000 ; free physical = 6707 ; free virtual = 10983
+Read PlaceDB: Time (s): cpu = 00:00:00.74 ; elapsed = 00:00:00.73 . Memory (MB): peak = 8649.855 ; gain = 10.008 ; free physical = 6700 ; free virtual = 10977
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8649.855 ; gain = 0.000 ; free physical = 6700 ; free virtual = 10977
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.71 ; elapsed = 00:00:00.18 . Memory (MB): peak = 8658.855 ; gain = 9.000 ; free physical = 6692 ; free virtual = 10968
+Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.93 . Memory (MB): peak = 8658.855 ; gain = 19.008 ; free physical = 6692 ; free virtual = 10968
+Restored from archive | CPU: 1.530000 secs | Memory: 27.156036 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.98 . Memory (MB): peak = 8658.855 ; gain = 27.914 ; free physical = 6692 ; free virtual = 10968
+INFO: [Implflow 47-1266] Can not restore QoR suggestion with ID RQS_NETLIST-10-6. New suggestion ID is RQS_NETLIST-10-1.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8680.668 ; gain = 0.000 ; free physical = 6680 ; free virtual = 10956
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 736 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 32 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 704 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2024.2 (64-bit) build 5239630
+open_checkpoint: Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 9081.895 ; gain = 1440.996 ; free physical = 6298 ; free virtual = 10579
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May 24 17:15:35 2025...

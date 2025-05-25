@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri May 23 22:23:59 2025
+# Process ID         : 281050
+# Current directory  : /home/matthias/fpga_projects/Fractaski-Basys3/hardware/vivado-impl/vivado-runs
+# Command line       : vivado -mode batch -source ../compile-scripts/compile.tcl
+# Log file           : /home/matthias/fpga_projects/Fractaski-Basys3/hardware/vivado-impl/vivado-runs/vivado.log
+# Journal file       : /home/matthias/fpga_projects/Fractaski-Basys3/hardware/vivado-impl/vivado-runs/vivado.jou
+# Running On         : debian
+# Platform           : Debian
+# Operating System   : Debian GNU/Linux 12 (bookworm)
+# Processor Detail   : AMD Ryzen 5 3600 6-Core Processor
+# CPU Frequency      : 2485.235 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16707 MB
+# Swap memory        : 1022 MB
+# Total Virtual      : 17730 MB
+# Available Virtual  : 14519 MB
+#-----------------------------------------------------------
+source ../compile-scripts/compile.tcl
+# set selected_fpga_part  $env(FPGA_PART)
+# set COMPILE_SCRIPTS_DIR $env(COMPILE_SCRIPTS_DIR)
+# set TOP_RTL             $env(TOP_RTL)
+# set MMCM_OUT_FREQ_MHZ $env(MMCM_OUT_FREQ_MHZ)
+# set NUM_PIPE_STAGES $env(NUM_PIPE_STAGES)
+# set NUM_THREADS $env(NUM_THREADS)
+# set ENABLE_BRAM_REGFILE $env(ENABLE_BRAM_REGFILE)
+# set ENABLE_ALU_DSP $env(ENABLE_ALU_DSP)
+# set ENABLE_UNIFIED_BARREL_SHIFTER $env(ENABLE_UNIFIED_BARREL_SHIFTER)
+# set SINGLE_PROGRAM $env(SINGLE_PROGRAM)
+# set CORE_HARD_BARRIER $env(CORE_HARD_BARRIER)
+# set HEX_PROG $env(HEX_PROG)
+# puts "MMCM_OUT_FREQ_MHZ: $MMCM_OUT_FREQ_MHZ"
+MMCM_OUT_FREQ_MHZ: 200
+# puts "NUM_PIPE_STAGES: $NUM_PIPE_STAGES"
+NUM_PIPE_STAGES: 4
+# puts "NUM_THREADS: $NUM_THREADS"
+NUM_THREADS: 4
+# puts "ENABLE_BRAM_REGFILE: $ENABLE_BRAM_REGFILE"
+ENABLE_BRAM_REGFILE: false
+# puts "ENABLE_ALU_DSP: $ENABLE_ALU_DSP"
+ENABLE_ALU_DSP: false
+# puts "ENABLE_UNIFIED_BARREL_SHIFTER: $ENABLE_UNIFIED_BARREL_SHIFTER"
+ENABLE_UNIFIED_BARREL_SHIFTER: false
+# puts "SINGLE_PROGRAM: $SINGLE_PROGRAM"
+SINGLE_PROGRAM: 1
+# puts "CORE_HARD_BARRIER: $CORE_HARD_BARRIER"
+CORE_HARD_BARRIER: 1
+# puts "HEX_PROG: $HEX_PROG"
+HEX_PROG: ../../../software/runs/fractals.inst
+# puts "Selected part key: $env(FPGA_PART)" 
+Selected part key: 
+# set fpga_parts [dict create \
+#     "nexys-a7"   "xc7a100tcsg324-1"\
+#     "basys3" "xc7a35tcpg236-1"\
+#     "nexys-video" "xnv"\
+#     ]
+key "" not known in dictionary
+    while executing
+"dict get $fpga_parts $selected_fpga_part"
+    invoked from within
+"set FPGA_PART [dict get $fpga_parts $selected_fpga_part]"
+    (file "../compile-scripts/compile.tcl" line 43)
+INFO: [Common 17-206] Exiting Vivado at Fri May 23 22:24:02 2025...

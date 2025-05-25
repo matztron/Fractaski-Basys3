@@ -1,0 +1,419 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Sat May 24 15:45:56 2025
+| Host         : debian running 64-bit Debian GNU/Linux 12 (bookworm)
+| Command      : report_drc -file ../vivado-runs/post_imp_drc.rpt
+| Design       : fpga
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_post_route
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 76
++----------+----------+----------------------------+--------+
+| Rule     | Severity | Description                | Checks |
++----------+----------+----------------------------+--------+
+| PDRC-134 | Warning  | SLICE_PairEqSame_B6B5_WARN | 13     |
+| PDRC-136 | Warning  | SLICE_PairEqSame_C6C5_WARN | 9      |
+| PDRC-138 | Warning  | SLICE_PairEqSame_D6D5_WARN | 6      |
+| PDRC-153 | Warning  | Gated clock check          | 48     |
++----------+----------+----------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-134#1 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X33Y24 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#2 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X37Y3 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#3 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X40Y27 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#4 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X40Y42 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#5 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X44Y37 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#6 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X4Y33 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#7 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X4Y72 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#8 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X58Y3 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#9 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X5Y12 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#10 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X61Y47 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#11 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X62Y26 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#12 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X62Y74 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#13 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X7Y53 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#1 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X37Y3 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#2 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X40Y42 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#3 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X44Y37 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#4 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X4Y33 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#5 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X4Y72 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#6 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X58Y3 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#7 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X5Y12 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#8 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X61Y47 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#9 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X62Y74 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#1 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X37Y3 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#2 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X39Y26 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#3 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X4Y33 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#4 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X58Y3 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#5 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X5Y12 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#6 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X61Y47 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[0].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2_n_0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[0].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2/O, cell cores_wrapper/row_gen[0].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[0].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/reserved_address__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[0].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1/O, cell cores_wrapper/row_gen[0].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[0].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/reserving_hart__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[0].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1/O, cell cores_wrapper/row_gen[0].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2_n_0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2/O, cell cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/reserved_address__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1/O, cell cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/reserving_hart__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1/O, cell cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2_n_0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2/O, cell cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/reserved_address__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1/O, cell cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/reserving_hart__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1/O, cell cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[0].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2_n_0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[0].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2/O, cell cores_wrapper/row_gen[0].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[0].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/reserved_address__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[0].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1/O, cell cores_wrapper/row_gen[0].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[0].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/reserving_hart__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[0].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1/O, cell cores_wrapper/row_gen[0].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2_n_0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2/O, cell cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/reserved_address__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1/O, cell cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/reserving_hart__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1/O, cell cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[1].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2_n_0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[1].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2/O, cell cores_wrapper/row_gen[1].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[1].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/reserved_address__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[1].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1/O, cell cores_wrapper/row_gen[1].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[1].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/reserving_hart__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[1].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1/O, cell cores_wrapper/row_gen[1].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[1].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2_n_0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[1].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2/O, cell cores_wrapper/row_gen[1].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[1].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/reserved_address__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[1].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1/O, cell cores_wrapper/row_gen[1].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[1].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/reserving_hart__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[1].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1/O, cell cores_wrapper/row_gen[1].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[1].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2_n_0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[1].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2/O, cell cores_wrapper/row_gen[1].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[1].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/reserved_address__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[1].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1/O, cell cores_wrapper/row_gen[1].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[1].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/reserving_hart__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[1].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1/O, cell cores_wrapper/row_gen[1].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2_n_0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2/O, cell cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/reserved_address__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1/O, cell cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/reserving_hart__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1/O, cell cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2_n_0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2/O, cell cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/reserved_address__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1/O, cell cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/reserving_hart__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1/O, cell cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[2].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2_n_0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[2].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2/O, cell cores_wrapper/row_gen[2].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[2].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/reserved_address__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[2].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1/O, cell cores_wrapper/row_gen[2].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[2].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/reserving_hart__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[2].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1/O, cell cores_wrapper/row_gen[2].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2_n_0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2/O, cell cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/reserved_address__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1/O, cell cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/reserving_hart__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1/O, cell cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#37 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2_n_0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2/O, cell cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#38 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/reserved_address__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1/O, cell cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#39 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/reserving_hart__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1/O, cell cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#40 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[3].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2_n_0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[3].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2/O, cell cores_wrapper/row_gen[3].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#41 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[3].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/reserved_address__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[3].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1/O, cell cores_wrapper/row_gen[3].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#42 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[3].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/reserving_hart__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[3].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1/O, cell cores_wrapper/row_gen[3].col_gen[1].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#43 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[3].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2_n_0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[3].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2/O, cell cores_wrapper/row_gen[3].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#44 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[3].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/reserved_address__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[3].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1/O, cell cores_wrapper/row_gen[3].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#45 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[3].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/reserving_hart__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[3].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1/O, cell cores_wrapper/row_gen[3].col_gen[2].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#46 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2_n_0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2/O, cell cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.o_sc_success_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#47 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/reserved_address__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1/O, cell cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserved_address_reg[11]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#48 Warning
+Gated clock check  
+Net cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/reserving_hart__0 is a gated clock net sourced by a combinational pin cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1/O, cell cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/reservation_set_inst/not_registered_reservation_set.reserving_hart_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

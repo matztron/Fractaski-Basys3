@@ -1,0 +1,27 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Sat May 24 15:43:56 2025
+| Host         : debian running 64-bit Debian GNU/Linux 12 (bookworm)
+| Command      : report_design_analysis -logic_level_distribution -of_timing_paths [get_timing_paths -max_paths 5000 -slack_lesser_than 0] -file ../vivado-runs/post_place_physopt_design_analysis.rpt
+| Design       : fpga
+| Device       : xc7a35t
+| Design State : Routed
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Design Analysis
+
+Table of Contents
+-----------------
+1. Logic Level Distribution
+
+1. Logic Level Distribution
+---------------------------
+
++-----------------+-------------+
+| End Point Clock | Requirement |
++-----------------+-------------+
+* Columns represent the logic levels per end point clock
+** Distribution is for top worst 0 paths
+
+

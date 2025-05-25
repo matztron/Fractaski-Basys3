@@ -1,0 +1,70 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Sat May 24 15:42:33 2025
+| Host         : debian running 64-bit Debian GNU/Linux 12 (bookworm)
+| Command      : report_qor_assessment -file ../vivado-runs/post_opt_qor_assessment.rpt
+| Design       : fpga
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Optimized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report QoR Assessment
+
+Table of Contents
+-----------------
+1. Overall Assessment Summary
+2. QoR Assessment Details
+3. Methodology Check Details
+4. ML Strategy Availability
+
+1. Overall Assessment Summary
+-----------------------------
+
++----------------------+-----------------------------------------------------------------------------------------------+
+| QoR Assessment Score | 3 - Design runs have a small chance of success                                                |
++----------------------+-----------------------------------------------------------------------------------------------+
+| Flow Guidance        | Run report_methodology and fix or waive warnings                                              |
+|                      | Run report_qor_suggestions to generate suggestions. They may indirectly improve REVIEW items. |
+|                      | To see critical timing paths examine the CSV file containing timing paths.                    |
++----------------------+-----------------------------------------------------------------------------------------------+
+
+
+2. QoR Assessment Details
+-------------------------
+
++----------------------------------------+-----------+--------+------+-----------+-------+--------+
+| Name                                   | Threshold | Actual | Used | Available | Score | Status |
++----------------------------------------+-----------+--------+------+-----------+-------+--------+
+| Utilization                            |           |        |      |           |   5.0 |        |
+|    Memory LUTs                         |     30.00 |  30.67 | 2944 |      9600 |       | REVIEW |
+| *  Max LUT Combined                    |     20.00 |  35.46 | 5032 |     14189 |       | REVIEW |
+| Netlist                                |           |        |      |           |       |        |
+| *  DONT_TOUCH (cells/nets)             |         0 |      1 |   -  |        -  |       | REVIEW |
+| *  High Fanout Nets driven by FFs/LUTs |         5 |   4.50 |   -  |        -  |       | REVIEW |
+| Clocking                               |           |        |      |           |   5.0 |     OK |
+| Congestion                             |           |        |      |           |   3.0 |        |
+|    Predicted Congestion Score          |         5 |      3 |      |           |   3.0 | REVIEW |
+| Timing                                 |           |        |      |           |   5.0 |     OK |
+| Constraints                            |           |        |      |           |   5.0 |     OK |
++----------------------------------------+-----------+--------+------+-----------+-------+--------+
+* Sub-categories with prefix * do not impact score
+
+
+3. Methodology Check Details
+----------------------------
+
++-----------+-------------------------------+-------------+----------------------+
+| ID        | Description                   | Criticality | Number of Violations |
++-----------+-------------------------------+-------------+----------------------+
+| TIMING-18 | Missing input or output delay | Warning     | 1                    |
+| TIMING-20 | Non-clocked latch             | Warning     | 256                  |
++-----------+-------------------------------+-------------+----------------------+
+
+
+4. ML Strategy Availability
+---------------------------
+
+ML Strategy is not supported for 7-series architectures.
+

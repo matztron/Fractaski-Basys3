@@ -13,8 +13,16 @@
 #define REG_HART_BASE_ADDR        0x8014U  // Base address for hart registers (hart0 starts at 0b00101)
 #define REG_BARRIER_STATUS_ADDR   0x8054U  // Address to read the combined barrier status
 
+// mm: new pragmas - unused - could be used for better understandability (no magic numbers in code)
+//#define CORE_CNT = 16 // 4x4 grid
+//#define CORE_CNT_LOG = 4
 
-//amount of frac bits for fixed shift use 
+//amount of frac bits for fixed shift use
+// float to fixed:
+// fixed_value = float value * 2^FIXED_SHIFT
+//
+// fixed to float:
+// float_value = fixed_value / (2^FIXED_SHIFT)
 #define FIXED_SHIFT 16
 typedef int fixed_t;
 
@@ -136,17 +144,21 @@ void main(unsigned int complete_id) {
     unsigned int iter = 0;
     unsigned int completed_iter_flag = 0;
 
-    unsigned int col_id = (complete_id >> 9) & 0xF;
-    unsigned int row_id = (complete_id >> 2) & 0xF;
-    unsigned int thread_id = complete_id  & 0x3;
+    unsigned int col_id = (complete_id >> 4) & 0x3; // bits 4-5
+    unsigned int row_id = (complete_id >> 2) & 0x3; // bits 2-3
+    unsigned int thread_id = complete_id  & 0x3; // bits 0-1
 
     //compute vram allocated space based on thread ID
     unsigned int base_uram_addr = (thread_id << 10) | MASK_VRAM;
     volatile unsigned char* datastream_uram_ptr = (volatile unsigned char*) base_uram_addr;
 
     //assign chunks to threads by assigning start point for each thread
-    //unsigned int start = (row_id * 64 * 512) + (col_id * 64  ) + (thread_id * 16 * 512); 
-    unsigned int start = (row_id << 15) + (col_id << 6) + (thread_id << 13); 
+    //Riadh: unsigned int start = (row_id * 64 * 512) + (col_id * 64  ) + (thread_id * 16 * 512);
+    
+    //Matthias: unsigned int start = (row_id * 128 * 512) + (col_id * 128  ) + (thread_id * 32 * 512); 
+    
+    //unsigned int start = (row_id << 15) + (col_id << 6) + (thread_id << 13);
+    unsigned int start = (row_id << 16) + (col_id << 7) + (thread_id << 14); 
 
     //5.2. Main computation loop (generic compute problem)
     //------------------------------------------------------

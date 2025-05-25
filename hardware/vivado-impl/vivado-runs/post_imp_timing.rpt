@@ -1,0 +1,605 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Sat May 24 15:45:49 2025
+| Host         : debian running 64-bit Debian GNU/Linux 12 (bookworm)
+| Command      : report_timing -sort_by group -max_paths 100 -path_type summary -file ../vivado-runs/post_imp_timing.rpt
+| Design       : fpga
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Startpoint                     Endpoint                       Slack(ns)     
+----------------------------------------------------------------------------
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/reg_hart_reg[1]/D
+                                                              0.541         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/reg2_rw_reg/D
+                                                              0.573         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/reg3_rw_reg/D
+                                                              0.580         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/reg_hart_reg[8]/D
+                                                              0.602         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/reg_hart_reg[9]/D
+                                                              0.608         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[11]/CE
+                                                              0.614         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[14]/CE
+                                                              0.614         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/reg_hart_reg[0]/D
+                                                              0.618         
+cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[3]/C
+                               cores_wrapper/row_gen[2].col_gen[3].core_inst/instr_and_data_mem/RAM_reg/DIBDI[7]
+                                                              0.619         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/reg_hart_reg[7]/D
+                                                              0.631         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/reg_hart_reg[2]/D
+                                                              0.635         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[0]/CE
+                                                              0.635         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/reg4_rw_reg/D
+                                                              0.641         
+cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/imm_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][4]/C
+                               cores_wrapper/row_gen[0].col_gen[2].core_inst/memory_mapped_interface_inst/reg3_rw_reg/D
+                                                              0.645         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[15]/CE
+                                                              0.647         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[2]/CE
+                                                              0.647         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[8]/CE
+                                                              0.647         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[0]/CE
+                                                              0.655         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[10]/CE
+                                                              0.655         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[4]/CE
+                                                              0.655         
+cores_wrapper/row_gen[1].col_gen[3].core_inst/RISCV_core_inst/aluop1sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[1].col_gen[3].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[0]/D
+                                                              0.657         
+cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[3]/C
+                               cores_wrapper/row_gen[2].col_gen[3].core_inst/instr_and_data_mem/RAM_reg/DIBDI[1]
+                                                              0.665         
+cores_wrapper/row_gen[3].col_gen[1].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[0]/D
+                                                              0.667         
+cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[1].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[10]/CE
+                                                              0.672         
+cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[1].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[15]/CE
+                                                              0.672         
+cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[1].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[3]/CE
+                                                              0.672         
+cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[1].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[5]/CE
+                                                              0.672         
+cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/dob_reg[15]/C
+                               cores_wrapper/row_gen[3].col_gen[3].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[10]/CE
+                                                              0.680         
+cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/dob_reg[15]/C
+                               cores_wrapper/row_gen[3].col_gen[3].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[12]/CE
+                                                              0.680         
+cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/dob_reg[15]/C
+                               cores_wrapper/row_gen[3].col_gen[3].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[14]/CE
+                                                              0.680         
+cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/dob_reg[15]/C
+                               cores_wrapper/row_gen[3].col_gen[3].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[8]/CE
+                                                              0.680         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/reg_hart_reg[10]/D
+                                                              0.685         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/reg_hart_reg[4]/D
+                                                              0.690         
+cores_wrapper/row_gen[2].col_gen[2].core_inst/RISCV_core_inst/aluop1sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[2].col_gen[2].core_inst/instr_and_data_mem/RAM_reg/DIBDI[31]
+                                                              0.693         
+cores_wrapper/row_gen[3].col_gen[2].core_inst/RISCV_core_inst/imm_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][3]/C
+                               cores_wrapper/row_gen[3].col_gen[2].core_inst/memory_mapped_interface_inst/reg_hart_reg[14]/D
+                                                              0.711         
+cores_wrapper/row_gen[3].col_gen[2].core_inst/RISCV_core_inst/imm_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][3]/C
+                               cores_wrapper/row_gen[3].col_gen[2].core_inst/memory_mapped_interface_inst/reg_hart_reg[13]/D
+                                                              0.715         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/reg_hart_reg[6]/D
+                                                              0.718         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[3]/CE
+                                                              0.721         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[5]/CE
+                                                              0.721         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[7]/CE
+                                                              0.721         
+cores_wrapper/row_gen[3].col_gen[2].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/dob_reg[31]/C
+                               cores_wrapper/row_gen[3].col_gen[2].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[0]/D
+                                                              0.723         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/reg_hart_reg[11]/D
+                                                              0.724         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/vram_mem/RAM_reg/DIBDI[8]
+                                                              0.727         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/reg_hart_reg[13]/D
+                                                              0.729         
+cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[2]/C
+                               cores_wrapper/row_gen[2].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[2]/CE
+                                                              0.729         
+cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/dob_reg[15]/C
+                               cores_wrapper/row_gen[3].col_gen[3].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[1]/CE
+                                                              0.732         
+cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/dob_reg[15]/C
+                               cores_wrapper/row_gen[3].col_gen[3].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[3]/CE
+                                                              0.732         
+cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/dob_reg[15]/C
+                               cores_wrapper/row_gen[3].col_gen[3].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[4]/CE
+                                                              0.732         
+cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[1].col_gen[0].core_inst/vram_mem/RAM_reg/DIBDI[21]
+                                                              0.732         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[6]/CE
+                                                              0.736         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[8]/CE
+                                                              0.736         
+cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/dob_reg[15]/C
+                               cores_wrapper/row_gen[3].col_gen[3].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[11]/CE
+                                                              0.737         
+cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/dob_reg[15]/C
+                               cores_wrapper/row_gen[3].col_gen[3].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[5]/CE
+                                                              0.737         
+cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/dob_reg[15]/C
+                               cores_wrapper/row_gen[3].col_gen[3].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[6]/CE
+                                                              0.737         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[1]/CE
+                                                              0.740         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[6]/CE
+                                                              0.740         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[9]/CE
+                                                              0.740         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[13]/CE
+                                                              0.741         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[15]/CE
+                                                              0.741         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/reg_hart_reg[15]/D
+                                                              0.745         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[10]/CE
+                                                              0.747         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[1]/CE
+                                                              0.747         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[5]/CE
+                                                              0.747         
+cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[2]/C
+                               cores_wrapper/row_gen[2].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[14]/CE
+                                                              0.749         
+cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[2]/C
+                               cores_wrapper/row_gen[2].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[5]/CE
+                                                              0.749         
+cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[2]/C
+                               cores_wrapper/row_gen[2].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[7]/CE
+                                                              0.749         
+cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[2]/C
+                               cores_wrapper/row_gen[2].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[9]/CE
+                                                              0.749         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[12]/CE
+                                                              0.749         
+cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/pcreg_pipe_inst/with_reset.n_is_2_reset.pipeline_stages_reg[1][5]/C
+                               cores_wrapper/row_gen[0].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[14]/CE
+                                                              0.749         
+cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/pcreg_pipe_inst/with_reset.n_is_2_reset.pipeline_stages_reg[1][5]/C
+                               cores_wrapper/row_gen[0].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[15]/CE
+                                                              0.752         
+cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/pcreg_pipe_inst/with_reset.n_is_2_reset.pipeline_stages_reg[1][5]/C
+                               cores_wrapper/row_gen[0].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[1]/CE
+                                                              0.752         
+cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/pcreg_pipe_inst/with_reset.n_is_2_reset.pipeline_stages_reg[1][5]/C
+                               cores_wrapper/row_gen[0].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[4]/CE
+                                                              0.752         
+cores_wrapper/row_gen[0].col_gen[1].core_inst/RISCV_core_inst/pcreg_pipe_inst/with_reset.n_is_2_reset.pipeline_stages_reg[1][5]/C
+                               cores_wrapper/row_gen[0].col_gen[1].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[8]/CE
+                                                              0.752         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/reg3_rw_reg/D
+                                                              0.758         
+cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[3]/C
+                               cores_wrapper/row_gen[2].col_gen[3].core_inst/vram_mem/RAM_reg/DIBDI[3]
+                                                              0.762         
+cores_wrapper/row_gen[1].col_gen[2].core_inst/RISCV_core_inst/pcreg_pipe_inst/with_reset.n_is_2_reset.pipeline_stages_reg[1][6]/C
+                               cores_wrapper/row_gen[1].col_gen[2].core_inst/memory_mapped_interface_inst/reg_hart_reg[8]/D
+                                                              0.765         
+cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/imm_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][4]/C
+                               cores_wrapper/row_gen[0].col_gen[2].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[10]/CE
+                                                              0.765         
+cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/imm_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][4]/C
+                               cores_wrapper/row_gen[0].col_gen[2].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[12]/CE
+                                                              0.765         
+cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/imm_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][4]/C
+                               cores_wrapper/row_gen[0].col_gen[2].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[2]/CE
+                                                              0.765         
+cores_wrapper/row_gen[0].col_gen[2].core_inst/RISCV_core_inst/imm_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][4]/C
+                               cores_wrapper/row_gen[0].col_gen[2].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[9]/CE
+                                                              0.765         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/reg_hart_reg[14]/D
+                                                              0.766         
+cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[2]/C
+                               cores_wrapper/row_gen[2].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[10]/CE
+                                                              0.767         
+cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[2]/C
+                               cores_wrapper/row_gen[2].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[1]/CE
+                                                              0.767         
+cores_wrapper/row_gen[2].col_gen[0].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[2]/C
+                               cores_wrapper/row_gen[2].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[8]/CE
+                                                              0.767         
+cores_wrapper/row_gen[2].col_gen[2].core_inst/instr_and_data_mem/RAM_reg/CLKBWRCLK
+                               cores_wrapper/row_gen[2].col_gen[2].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/MEM_reg_64_127_27_29/RAMC/I
+                                                              0.769         
+cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[3]/C
+                               cores_wrapper/row_gen[2].col_gen[3].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[2]/CE
+                                                              0.769         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/reg_hart_reg[12]/D
+                                                              0.769         
+cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[1].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[12]/CE
+                                                              0.770         
+cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[1].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[1]/CE
+                                                              0.770         
+cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[1].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[2]/CE
+                                                              0.770         
+cores_wrapper/row_gen[1].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[1].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[9]/CE
+                                                              0.770         
+cores_wrapper/row_gen[2].col_gen[3].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[3]/C
+                               cores_wrapper/row_gen[2].col_gen[3].core_inst/vram_mem/RAM_reg/DIBDI[7]
+                                                              0.771         
+cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/dob_reg[15]/C
+                               cores_wrapper/row_gen[3].col_gen[3].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[15]/CE
+                                                              0.773         
+cores_wrapper/row_gen[3].col_gen[3].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_top_inst/dob_reg[15]/C
+                               cores_wrapper/row_gen[3].col_gen[3].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[2]/CE
+                                                              0.773         
+cores_wrapper/row_gen[2].col_gen[1].core_inst/RISCV_core_inst/register_file_vec_inst/regfile_bot_inst/dob_reg[1]/C
+                               cores_wrapper/row_gen[2].col_gen[1].core_inst/memory_mapped_interface_inst/reg_hart_reg[3]/D
+                                                              0.774         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/reg_hart_reg[15]/D
+                                                              0.776         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[2]/CE
+                                                              0.777         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[3]/CE
+                                                              0.777         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[7]/CE
+                                                              0.777         
+cores_wrapper/row_gen[3].col_gen[0].core_inst/RISCV_core_inst/aluop2sel_reg_inst/without_reset.n_is_1.pipeline_stages_reg[0][0]/C
+                               cores_wrapper/row_gen[3].col_gen[0].core_inst/memory_mapped_interface_inst/o_mmio_data_out_reg[9]/CE
+                                                              0.777         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               VGA_VS_reg/R                   0.844         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               vga_controller_inst/pixel_data_reg[5]/R
+                                                              0.844         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               vga_controller_inst/pixel_data_reg[6]/R
+                                                              0.844         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               vga_controller_inst/pixel_data_reg[7]/R
+                                                              0.844         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               VGA_HS_reg/R                   0.854         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               vga_controller_inst/v_count_reg[7]/R
+                                                              0.854         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               vga_controller_inst/v_count_reg[8]/R
+                                                              0.854         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               vga_controller_inst/v_count_reg[9]/R
+                                                              0.854         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               VGA_B_reg[2]/R                 0.936         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               VGA_B_reg[3]/R                 0.936         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               VGA_G_reg[0]/R                 0.936         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               VGA_G_reg[1]/R                 0.936         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               VGA_G_reg[2]/R                 0.936         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               VGA_G_reg[3]/R                 0.936         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               VGA_R_reg[0]/R                 0.936         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               VGA_R_reg[1]/R                 0.936         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               vga_controller_inst/pixel_data_reg[1]/R
+                                                              0.939         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               vga_controller_inst/pixel_data_reg[2]/R
+                                                              0.939         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               vga_controller_inst/pixel_data_reg[3]/R
+                                                              0.939         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               vga_controller_inst/pixel_data_reg[4]/R
+                                                              0.939         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               vga_controller_inst/v_count_reg[0]/R
+                                                              0.939         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               vga_controller_inst/v_count_reg[5]/R
+                                                              0.939         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               vga_controller_inst/v_count_reg[6]/R
+                                                              0.939         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               VGA_B_reg[0]/R                 0.940         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               VGA_B_reg[1]/R                 0.940         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               VGA_R_reg[2]/R                 0.940         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               VGA_R_reg[3]/R                 0.940         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               vga_controller_inst/v_count_reg[1]/R
+                                                              0.945         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               vga_controller_inst/v_count_reg[2]/R
+                                                              0.945         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               vga_controller_inst/v_count_reg[3]/R
+                                                              0.945         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               vga_controller_inst/v_count_reg[4]/R
+                                                              0.945         
+sync_reset_gen_inst/reset_sync3_reg_lopt_replica/C
+                               vga_controller_inst/pixel_valid_reg/R
+                                                              0.950         
+sync_reset_gen_inst/reset_sync3_reg/C
+                               vga_controller_inst/h_count_reg[0]/R
+                                                              1.719         
+sync_reset_gen_inst/reset_sync3_reg/C
+                               vga_controller_inst/h_count_reg[6]/R
+                                                              1.842         
+sync_reset_gen_inst/reset_sync3_reg/C
+                               vga_controller_inst/h_count_reg[7]/R
+                                                              1.842         
+sync_reset_gen_inst/reset_sync3_reg/C
+                               vga_controller_inst/h_count_reg[8]/R
+                                                              1.842         
+sync_reset_gen_inst/reset_sync3_reg/C
+                               vga_controller_inst/h_count_reg[9]/R
+                                                              1.842         
+sync_reset_gen_inst/reset_sync3_reg/C
+                               vga_controller_inst/h_count_reg[10]/R
+                                                              1.980         
+sync_reset_gen_inst/reset_sync3_reg/C
+                               vga_controller_inst/h_count_reg[1]/R
+                                                              1.980         
+sync_reset_gen_inst/reset_sync3_reg/C
+                               vga_controller_inst/h_count_reg[2]/R
+                                                              1.980         
+sync_reset_gen_inst/reset_sync3_reg/C
+                               vga_controller_inst/h_count_reg[5]/R
+                                                              1.980         
+sync_reset_gen_inst/reset_sync3_reg/C
+                               vga_controller_inst/h_count_reg[3]/R
+                                                              1.985         
+sync_reset_gen_inst/reset_sync3_reg/C
+                               vga_controller_inst/h_count_reg[4]/R
+                                                              1.985         
+cores_wrapper/row_gen[1].col_gen[2].core_inst/vram_mem/RAM_reg/CLKARDCLK
+                               vga_controller_inst/pixel_data_reg[7]/D
+                                                              16.438        
+cores_wrapper/row_gen[1].col_gen[2].core_inst/vram_mem/RAM_reg/CLKARDCLK
+                               vga_controller_inst/pixel_data_reg[6]/D
+                                                              16.661        
+cores_wrapper/row_gen[1].col_gen[0].core_inst/vram_mem/RAM_reg/CLKARDCLK
+                               vga_controller_inst/pixel_data_reg[1]/D
+                                                              16.714        
+cores_wrapper/row_gen[1].col_gen[2].core_inst/vram_mem/RAM_reg/CLKARDCLK
+                               vga_controller_inst/pixel_data_reg[4]/D
+                                                              16.817        
+cores_wrapper/row_gen[1].col_gen[2].core_inst/vram_mem/RAM_reg/CLKARDCLK
+                               vga_controller_inst/pixel_data_reg[2]/D
+                                                              16.871        
+cores_wrapper/row_gen[2].col_gen[2].core_inst/vram_mem/RAM_reg/CLKARDCLK
+                               vga_controller_inst/pixel_data_reg[3]/D
+                                                              16.964        
+cores_wrapper/row_gen[2].col_gen[1].core_inst/vram_mem/RAM_reg/CLKARDCLK
+                               vga_controller_inst/pixel_data_reg[5]/D
+                                                              17.138        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[3].core_inst/vram_mem/RAM_reg/ADDRARDADDR[14]
+                                                              17.647        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[3].core_inst/vram_mem/RAM_reg/ADDRARDADDR[11]
+                                                              17.737        
+vga_controller_inst/h_count_reg[10]/C
+                               cores_wrapper/row_gen[1].col_gen[3].core_inst/vram_mem/RAM_reg/ADDRARDADDR[12]
+                                                              18.066        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[3].core_inst/vram_mem/RAM_reg/ADDRARDADDR[5]
+                                                              18.162        
+vga_controller_inst/v_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[3].core_inst/vram_mem/RAM_reg/ADDRARDADDR[8]
+                                                              18.247        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[3].core_inst/vram_mem/RAM_reg/ADDRARDADDR[6]
+                                                              18.335        
+vga_controller_inst/v_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[3].core_inst/vram_mem/RAM_reg/ADDRARDADDR[7]
+                                                              18.510        
+vga_controller_inst/h_count_reg[10]/C
+                               cores_wrapper/row_gen[1].col_gen[3].core_inst/vram_mem/RAM_reg/ADDRARDADDR[13]
+                                                              18.648        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[0].core_inst/vram_mem/RAM_reg/ADDRARDADDR[14]
+                                                              18.651        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[2].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[11]
+                                                              18.735        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[0].core_inst/vram_mem/RAM_reg/ADDRARDADDR[11]
+                                                              18.741        
+vga_controller_inst/v_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[3].core_inst/vram_mem/RAM_reg/ADDRARDADDR[9]
+                                                              18.755        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[3].core_inst/delayed_vga_vram_addr_reg[0]/D
+                                                              18.805        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[14]
+                                                              18.818        
+vga_controller_inst/v_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[3].core_inst/vram_mem/RAM_reg/ADDRARDADDR[10]
+                                                              18.827        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[2].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[14]
+                                                              18.854        
+vga_controller_inst/v_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[8]
+                                                              18.859        
+vga_controller_inst/v_count_reg[9]/C
+                               cores_wrapper/row_gen[2].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[8]
+                                                              18.914        
+vga_controller_inst/h_count_reg[10]/C
+                               cores_wrapper/row_gen[2].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[12]
+                                                              18.936        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[1].core_inst/vram_mem/RAM_reg/ADDRARDADDR[14]
+                                                              18.964        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[6]
+                                                              19.004        
+vga_controller_inst/h_count_reg[10]/C
+                               cores_wrapper/row_gen[1].col_gen[0].core_inst/vram_mem/RAM_reg/ADDRARDADDR[12]
+                                                              19.070        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[5]
+                                                              19.115        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[0].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[14]
+                                                              19.152        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[0].core_inst/vram_mem/RAM_reg/ADDRARDADDR[5]
+                                                              19.166        
+vga_controller_inst/v_count_reg[9]/C
+                               cores_wrapper/row_gen[0].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[8]
+                                                              19.193        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[2].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[6]
+                                                              19.207        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[0].col_gen[3].core_inst/vram_mem/RAM_reg/ADDRARDADDR[5]
+                                                              19.212        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[1].core_inst/vram_mem/RAM_reg/ADDRARDADDR[6]
+                                                              19.214        
+vga_controller_inst/h_count_reg[10]/C
+                               cores_wrapper/row_gen[1].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[12]
+                                                              19.221        
+vga_controller_inst/v_count_reg[9]/C
+                               cores_wrapper/row_gen[2].col_gen[3].core_inst/vram_mem/RAM_reg/ADDRARDADDR[8]
+                                                              19.242        
+vga_controller_inst/v_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[0].core_inst/vram_mem/RAM_reg/ADDRARDADDR[8]
+                                                              19.251        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[1].core_inst/vram_mem/RAM_reg/ADDRARDADDR[11]
+                                                              19.290        
+vga_controller_inst/v_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[1].core_inst/vram_mem/RAM_reg/ADDRARDADDR[10]
+                                                              19.295        
+vga_controller_inst/h_count_reg[10]/C
+                               cores_wrapper/row_gen[2].col_gen[3].core_inst/vram_mem/RAM_reg/ADDRARDADDR[12]
+                                                              19.307        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[3].col_gen[3].core_inst/vram_mem/RAM_reg/ADDRARDADDR[14]
+                                                              19.316        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[2].col_gen[3].core_inst/vram_mem/RAM_reg/ADDRARDADDR[5]
+                                                              19.317        
+vga_controller_inst/v_count_reg[9]/C
+                               cores_wrapper/row_gen[2].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[10]
+                                                              19.333        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[0].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[6]
+                                                              19.338        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[0].core_inst/vram_mem/RAM_reg/ADDRARDADDR[6]
+                                                              19.339        
+vga_controller_inst/h_count_reg[10]/C
+                               cores_wrapper/row_gen[2].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[13]
+                                                              19.370        
+vga_controller_inst/v_count_reg[9]/C
+                               cores_wrapper/row_gen[2].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[9]
+                                                              19.387        
+vga_controller_inst/v_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[9]
+                                                              19.411        
+vga_controller_inst/h_count_reg[10]/C
+                               cores_wrapper/row_gen[3].col_gen[3].core_inst/vram_mem/RAM_reg/ADDRARDADDR[12]
+                                                              19.415        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[0].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[5]
+                                                              19.449        
+vga_controller_inst/v_count_reg[9]/C
+                               cores_wrapper/row_gen[2].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[7]
+                                                              19.486        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[2].col_gen[3].core_inst/vram_mem/RAM_reg/ADDRARDADDR[6]
+                                                              19.503        
+vga_controller_inst/h_count_reg[9]/C
+                               cores_wrapper/row_gen[2].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[5]
+                                                              19.506        
+vga_controller_inst/v_count_reg[9]/C
+                               cores_wrapper/row_gen[1].col_gen[0].core_inst/vram_mem/RAM_reg/ADDRARDADDR[7]
+                                                              19.514        
+vga_controller_inst/h_count_reg[10]/C
+                               cores_wrapper/row_gen[1].col_gen[2].core_inst/vram_mem/RAM_reg/ADDRARDADDR[13]
+                                                              19.527        
+
+
+

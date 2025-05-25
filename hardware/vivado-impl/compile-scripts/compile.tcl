@@ -31,18 +31,20 @@ puts "SINGLE_PROGRAM: $SINGLE_PROGRAM"
 puts "CORE_HARD_BARRIER: $CORE_HARD_BARRIER"
 puts "HEX_PROG: $HEX_PROG"
 
+puts "Selected part key: $env(FPGA_PART)" 
+
 #TBD basys3 and nx-video fpga_parts
 set fpga_parts [dict create \
     "nexys-a7"   "xc7a100tcsg324-1"\
-    "basys3" "xcb"\
+    "basys3" "xc7a35tcpg236-1"\
     "nexys-video" "xnv"\
     ]
 
 set FPGA_PART [dict get $fpga_parts $selected_fpga_part]
 
-set INC_DIR               "../../../submodules/BRISKI/hardware/vivado-impl/utils"
+set INC_DIR               "../../../submodules/BRISKI-Basys3/hardware/vivado-impl/utils"
 set RTL_SOURCE_DIR        "../../rtl"
-set RISCV_CORE_SOURCE_DIR "../../../submodules/BRISKI/hardware/rtl"
+set RISCV_CORE_SOURCE_DIR "../../../submodules/BRISKI-Basys3/hardware/rtl"
 set USR_CONSTR_DIR        "../usr-constraints"
 set outputDir ../$env(RUN_DIR)
 

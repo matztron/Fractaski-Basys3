@@ -1,7 +1,7 @@
 module fpga #(
     parameter int MMCM_OUT_FREQ = `MMCM_OUT_FREQ_MHZ,
-    parameter int N = 8,
-    parameter int M = 8
+    parameter int N = 4,
+    parameter int M = 4
 ) (
     input logic switch,
     input  logic clk,

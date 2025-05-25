@@ -1,6 +1,6 @@
 module manycore_wrapper #(
-    parameter int N = 8, // Rows
-    parameter int M = 8 // Columns
+    parameter int N = 4, // Rows
+    parameter int M = 4 // Columns
 )(
     input logic clk,
     input logic clkvga,

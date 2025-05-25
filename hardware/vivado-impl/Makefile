@@ -48,10 +48,11 @@ ENV_VARS = RUN_DIR=$(RUN_DIR) \
 	   ENABLE_UNIFIED_BARREL_SHIFTER=$(ENABLE_UNIFIED_BARREL_SHIFTER) \
 	   SINGLE_PROGRAM=$(SINGLE_PROGRAM) \
 	   CORE_HARD_BARRIER=$(CORE_HARD_BARRIER) \
-	   HEX_PROG=../$(HEX_PROG)
+	   HEX_PROG=../$(HEX_PROG) \
+	   FPGA_PART=$(FPGA_PART)
 
 
-all: compile_nexys-a7
+all: compile_basys3
 
 compile_nexys-a7: 
 	$(MAKE) compile FPGA_PART=nexys-a7
@@ -66,8 +67,9 @@ compile_nexys-video:
 
 compile: hex_gen
 	mkdir -p $(RUN_DIR)
-	FPGA_PART=$(FPGA_PART)
-	cd $(RUN_DIR) && FPGA_PART=$(FPGA_PART) $(ENV_VARS) vivado -mode batch -source $(COMPILE_SCRIPTS_DIR)/compile.tcl
+	cd $(RUN_DIR) && \
+	$(ENV_VARS) \
+	vivado -mode batch -source $(COMPILE_SCRIPTS_DIR)/compile.tcl
 
 # generate .inst file
 hex_gen:
@@ -79,4 +81,4 @@ clean:
 help:
 	@echo "(make all) will generate the fpga bitstream for the target board" 
 
-all: clean compile 
+all: clean compile
