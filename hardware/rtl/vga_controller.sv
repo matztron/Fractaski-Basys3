@@ -74,7 +74,7 @@ module vga_controller (
     // Address calculation
     always_comb begin
         // Determine if in active display area
-        active_area = (h_count < 512) && (v_count < 512);
+        active_area = (h_count < 256) && (v_count < 256); // MM: Riadh said to change to 256x256
         // Current pixel position in active area
         pixel_x = h_count;
         pixel_y = v_count;

@@ -86,8 +86,8 @@ static void atomic_barrier(int hart_id, unsigned int* sense, unsigned int* compl
 //COMPUTING KERNEL CONSTANTS
 //--------------------------
 #define MAX_ESCAPE_ITER 256
-#define RESOLUTION 512 // 512 x 512
-#define RESOLUTION_LOG 9
+#define RESOLUTION 256 // 512 x 512
+#define RESOLUTION_LOG 8
 		     
 #define x_step ((3 << FIXED_SHIFT) / RESOLUTION) 
 #define y_step ((3 << FIXED_SHIFT) / RESOLUTION)
@@ -97,9 +97,10 @@ static void atomic_barrier(int hart_id, unsigned int* sense, unsigned int* compl
 //COMPUTING KERNEL TASK
 //--------------------------
 void compute_datastream(unsigned int start,  volatile unsigned char* datastreamptr, unsigned int iter) { 
+  // mm: each thread calculates 16x64 pixels?
   for (unsigned int offset = 0; offset < 16; offset++) { 
     for (unsigned int p = 0; p < 64; p++) { 
-        unsigned int idx = (start + p + (offset << 9)); 
+        unsigned int idx = (start + p + (offset << 8)); 
         unsigned int i = (idx & (RESOLUTION - 1)); // idx % RESOLUTION
         unsigned int j = (idx >> RESOLUTION_LOG);  // idx / RESOLUTION
         
@@ -110,7 +111,13 @@ void compute_datastream(unsigned int start,  volatile unsigned char* datastreamp
 	
         fixed_t zr = x0, zi = y0;
         unsigned int count = 0;
+
+    // for debugging:
+    // animated - as it should be :)
 	fixed_t cx0 = Re_c[iter], cy0 = Im_c[iter] ;
+    // non animated for testing
+    //fixed_t cx0 = 0;
+    //fixed_t cy0 = 0;
 
         // Mandelbrot iteration
         while (count < MAX_ESCAPE_ITER) {
@@ -144,9 +151,12 @@ void main(unsigned int complete_id) {
     unsigned int iter = 0;
     unsigned int completed_iter_flag = 0;
 
-    unsigned int col_id = (complete_id >> 4) & 0x3; // bits 4-5
+    /*unsigned int col_id = (complete_id >> 4) & 0x3; // bits 4-5
     unsigned int row_id = (complete_id >> 2) & 0x3; // bits 2-3
-    unsigned int thread_id = complete_id  & 0x3; // bits 0-1
+    unsigned int thread_id = complete_id  & 0x3; // bits 0-1*/
+    unsigned int col_id = (complete_id >> 9) & 0xF;
+    unsigned int row_id = (complete_id >> 2) & 0xF;
+    unsigned int thread_id = complete_id  & 0x3;
 
     //compute vram allocated space based on thread ID
     unsigned int base_uram_addr = (thread_id << 10) | MASK_VRAM;
@@ -154,11 +164,14 @@ void main(unsigned int complete_id) {
 
     //assign chunks to threads by assigning start point for each thread
     //Riadh: unsigned int start = (row_id * 64 * 512) + (col_id * 64  ) + (thread_id * 16 * 512);
+    //unsigned int start = (row_id << 15) + (col_id << 6) + (thread_id << 13);
     
     //Matthias: unsigned int start = (row_id * 128 * 512) + (col_id * 128  ) + (thread_id * 32 * 512); 
-    
-    //unsigned int start = (row_id << 15) + (col_id << 6) + (thread_id << 13);
-    unsigned int start = (row_id << 16) + (col_id << 7) + (thread_id << 14); 
+    //unsigned int start = (row_id << 16) + (col_id << 7) + (thread_id << 14);
+
+    // riadh change
+    //unsigned int start = (row_id * 64 * 256) + (col_id * 64  ) + (thread_id * 16 * 256);
+    unsigned int start = (row_id << 14) + (col_id << 6) + (thread_id << 12);
 
     //5.2. Main computation loop (generic compute problem)
     //------------------------------------------------------

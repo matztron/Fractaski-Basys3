@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-| Date         : Sat May 24 15:42:09 2025
+| Date         : Wed Jun  4 19:03:38 2025
 | Host         : debian running 64-bit Debian GNU/Linux 12 (bookworm)
 | Command      : report_timing_summary -file ../vivado-runs/post_synth_timing_summary.rpt
 | Design       : fpga
@@ -357,7 +357,7 @@ Clock                     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total
 sys_clk_pin                                                                                                                                                             3.000        0.000                       0                     2  
   clkfbout_clk_wiz_0                                                                                                                                                    7.845        0.000                       0                     3  
   clkout0                  -0.097      -12.360                    128                30196        0.043        0.000                      0                30196        3.750        0.000                       0                  7430  
-  clkout1                  19.370        0.000                      0                  260        0.146        0.000                      0                  260       12.000        0.000                       0                    97  
+  clkout1                  19.370        0.000                      0                  260        0.144        0.000                      0                  260       12.000        0.000                       0                    97  
 
 
 ------------------------------------------------------------------------------------------------
@@ -621,7 +621,7 @@ From Clock:  clkout1
   To Clock:  clkout1
 
 Setup :            0  Failing Endpoints,  Worst Slack       19.370ns,  Total Violation        0.000ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.146ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.144ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack       12.000ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
@@ -703,15 +703,15 @@ Slack (MET) :             19.370ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.146ns  (arrival time - required time)
-  Source:                 vga_controller_inst/h_count_reg[5]/C
+Slack (MET) :             0.144ns  (arrival time - required time)
+  Source:                 vga_controller_inst/v_count_reg[6]/C
                             (rising edge-triggered cell FDRE clocked by clkout1  {rise@0.000ns fall@12.500ns period=25.000ns})
-  Destination:            vga_controller_inst/h_count_reg[5]/D
+  Destination:            cores_wrapper/core_select_row_reg[0]/D
                             (rising edge-triggered cell FDRE clocked by clkout1  {rise@0.000ns fall@12.500ns period=25.000ns})
   Path Group:             clkout1
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clkout1 rise@0.000ns - clkout1 rise@0.000ns)
-  Data Path Delay:        0.382ns  (logic 0.239ns (62.583%)  route 0.143ns (37.417%))
+  Data Path Delay:        0.380ns  (logic 0.239ns (62.860%)  route 0.141ns (37.140%))
   Logic Levels:           1  (LUT6=1)
   Clock Path Skew:        0.145ns (DCD - SCD - CPR)
     Destination Clock Delay (DCD):    1.057ns
@@ -732,13 +732,13 @@ Slack (MET) :             0.146ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.337     0.564    MMCM_clock_gen_inst/clkout1
                          BUFG (Prop_bufg_I_O)         0.026     0.590 r  MMCM_clock_gen_inst/clkout1_buf/O
                          net (fo=95, unplaced)        0.114     0.704    vga_controller_inst/clk
-                         FDRE                                         r  vga_controller_inst/h_count_reg[5]/C
+                         FDRE                                         r  vga_controller_inst/v_count_reg[6]/C
   -------------------------------------------------------------------    -------------------
-                         FDRE (Prop_fdre_C_Q)         0.141     0.845 r  vga_controller_inst/h_count_reg[5]/Q
-                         net (fo=5, unplaced)         0.143     0.987    vga_controller_inst/h_count_reg[5]
-                         LUT6 (Prop_lut6_I5_O)        0.098     1.085 r  vga_controller_inst/h_count[5]_i_1/O
-                         net (fo=1, unplaced)         0.000     1.085    vga_controller_inst/h_count[5]_i_1_n_0
-                         FDRE                                         r  vga_controller_inst/h_count_reg[5]/D
+                         FDRE (Prop_fdre_C_Q)         0.141     0.845 r  vga_controller_inst/v_count_reg[6]/Q
+                         net (fo=4, unplaced)         0.141     0.986    vga_controller_inst/v_count_reg_n_0_[6]
+                         LUT6 (Prop_lut6_I5_O)        0.098     1.084 r  vga_controller_inst/VRAM_addr[15]_INST_0/O
+                         net (fo=1, unplaced)         0.000     1.084    cores_wrapper/global_addr[15]
+                         FDRE                                         r  cores_wrapper/core_select_row_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clkout1 rise edge)    0.000     0.000 r  
@@ -752,15 +752,15 @@ Slack (MET) :             0.146ns  (arrival time - required time)
                                                      -0.643     0.414 r  MMCM_clock_gen_inst/mmcm_adv_inst/CLKOUT1
                          net (fo=1, unplaced)         0.355     0.769    MMCM_clock_gen_inst/clkout1
                          BUFG (Prop_bufg_I_O)         0.029     0.798 r  MMCM_clock_gen_inst/clkout1_buf/O
-                         net (fo=95, unplaced)        0.259     1.057    vga_controller_inst/clk
-                         FDRE                                         r  vga_controller_inst/h_count_reg[5]/C
+                         net (fo=95, unplaced)        0.259     1.057    cores_wrapper/clkvga
+                         FDRE                                         r  cores_wrapper/core_select_row_reg[0]/C
                          clock pessimism             -0.208     0.849    
-                         FDRE (Hold_fdre_C_D)         0.091     0.940    vga_controller_inst/h_count_reg[5]
+                         FDRE (Hold_fdre_C_D)         0.091     0.940    cores_wrapper/core_select_row_reg[0]
   -------------------------------------------------------------------
                          required time                         -0.940    
-                         arrival time                           1.085    
+                         arrival time                           1.084    
   -------------------------------------------------------------------
-                         slack                                  0.146    
+                         slack                                  0.144    
 
 
 

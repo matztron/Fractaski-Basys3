@@ -10,29 +10,29 @@ ROM              0x00000000         0x00000400         xr
 
 Linker script and memory map
 
-LOAD /tmp/ccrTR33c.o
-LOAD /tmp/cctzmI0o.o
-LOAD /tmp/ccblFw0S.ltrans0.ltrans.o
+LOAD /tmp/ccLaSog9.o
+LOAD /tmp/ccCcCLBU.o
+LOAD /tmp/cch6a9Y0.ltrans0.ltrans.o
 
 .text           0x00000000      0x330
  *(.text)
- .text          0x00000000       0x28 /tmp/ccrTR33c.o
+ .text          0x00000000       0x28 /tmp/ccLaSog9.o
                 0x00000000                _start
- .text          0x00000028      0x308 /tmp/ccblFw0S.ltrans0.ltrans.o
+ .text          0x00000028      0x308 /tmp/cch6a9Y0.ltrans0.ltrans.o
                 0x000000ec                main
 
 .rela.dyn       0x00000330        0x0
- .rela.text     0x00000330        0x0 /tmp/ccrTR33c.o
+ .rela.text     0x00000330        0x0 /tmp/ccLaSog9.o
 
 .data           0x00000400      0x5a0
  *(.data)
- .data          0x00000400        0x0 /tmp/ccrTR33c.o
- .data          0x00000400      0x5a0 /tmp/ccblFw0S.ltrans0.ltrans.o
+ .data          0x00000400        0x0 /tmp/ccLaSog9.o
+ .data          0x00000400      0x5a0 /tmp/cch6a9Y0.ltrans0.ltrans.o
 
 .bss            0x000009a0        0x0
  *(.bss)
- .bss           0x000009a0        0x0 /tmp/ccrTR33c.o
- .bss           0x000009a0        0x0 /tmp/ccblFw0S.ltrans0.ltrans.o
+ .bss           0x000009a0        0x0 /tmp/ccLaSog9.o
+ .bss           0x000009a0        0x0 /tmp/cch6a9Y0.ltrans0.ltrans.o
  *(.bss.*)
                 0x00000ffc                        _stack_top = ((ORIGIN (RAM) + LENGTH (RAM)) - 0x4)
 OUTPUT(fractals.elf elf32-littleriscv)
@@ -40,15 +40,15 @@ OUTPUT(fractals.elf elf32-littleriscv)
 .riscv.attributes
                 0x00000000       0x41
  .riscv.attributes
-                0x00000000       0x3f /tmp/ccrTR33c.o
+                0x00000000       0x3f /tmp/ccLaSog9.o
  .riscv.attributes
-                0x0000003f       0x3d /tmp/ccblFw0S.ltrans0.ltrans.o
+                0x0000003f       0x3d /tmp/cch6a9Y0.ltrans0.ltrans.o
 
 .comment        0x00000000       0x19
- .comment       0x00000000       0x19 /tmp/ccblFw0S.ltrans0.ltrans.o
+ .comment       0x00000000       0x19 /tmp/cch6a9Y0.ltrans0.ltrans.o
                                  0x1a (size before relaxing)
 
 .note.GNU-stack
                 0x00000000        0x0
  .note.GNU-stack
-                0x00000000        0x0 /tmp/ccblFw0S.ltrans0.ltrans.o
+                0x00000000        0x0 /tmp/cch6a9Y0.ltrans0.ltrans.o

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-| Date             : Sat May 24 15:45:54 2025
+| Date             : Wed Jun  4 19:07:17 2025
 | Host             : debian running 64-bit Debian GNU/Linux 12 (bookworm)
 | Command          : report_power -file ../vivado-runs/post_imp_power.rpt
 | Design           : fpga
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.517        |
+| Total On-Chip Power (W)  | 0.516        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.443        |
+| Dynamic (W)              | 0.442        |
 | Device Static (W)        | 0.074        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 82.4         |
@@ -52,20 +52,20 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.036 |        6 |       --- |             --- |
+| Clocks                   |     0.035 |        6 |       --- |             --- |
 | Slice Logic              |     0.080 |    23102 |       --- |             --- |
-|   LUT as Logic           |     0.070 |    10731 |     20800 |           51.59 |
+|   LUT as Logic           |     0.069 |    10739 |     20800 |           51.63 |
 |   LUT as Distributed RAM |     0.007 |     2944 |      9600 |           30.67 |
 |   Register               |     0.002 |     4644 |     41600 |           11.16 |
 |   CARRY4                 |     0.001 |      320 |      8150 |            3.93 |
 |   Others                 |     0.000 |     1032 |       --- |             --- |
 |   BUFG                   |     0.000 |        1 |        32 |            3.13 |
-| Signals                  |     0.152 |    19010 |       --- |             --- |
+| Signals                  |     0.154 |    19011 |       --- |             --- |
 | Block RAM                |     0.067 |       32 |        50 |           64.00 |
 | MMCM                     |     0.106 |        1 |         5 |           20.00 |
 | I/O                      |    <0.001 |       16 |       106 |           15.09 |
 | Static Power             |     0.074 |          |           |                 |
-| Total                    |     0.517 |          |           |                 |
+| Total                    |     0.516 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -147,19 +147,19 @@ Table of Contents
 +-------------------------------------+-----------+
 | Name                                | Power (W) |
 +-------------------------------------+-----------+
-| fpga                                |     0.443 |
+| fpga                                |     0.442 |
 |   MMCM_clock_gen_inst               |     0.107 |
-|   cores_wrapper                     |     0.335 |
-|     row_gen[0].col_gen[0].core_inst |     0.021 |
+|   cores_wrapper                     |     0.334 |
+|     row_gen[0].col_gen[0].core_inst |     0.022 |
 |       RISCV_core_inst               |     0.016 |
 |       instr_and_data_mem            |     0.003 |
 |       vram_mem                      |     0.001 |
-|     row_gen[0].col_gen[1].core_inst |     0.021 |
+|     row_gen[0].col_gen[1].core_inst |     0.022 |
 |       RISCV_core_inst               |     0.016 |
 |       instr_and_data_mem            |     0.003 |
 |       vram_mem                      |     0.001 |
 |     row_gen[0].col_gen[2].core_inst |     0.022 |
-|       RISCV_core_inst               |     0.016 |
+|       RISCV_core_inst               |     0.017 |
 |       instr_and_data_mem            |     0.003 |
 |       vram_mem                      |     0.001 |
 |     row_gen[0].col_gen[3].core_inst |     0.022 |
@@ -167,23 +167,23 @@ Table of Contents
 |       instr_and_data_mem            |     0.003 |
 |       vram_mem                      |     0.001 |
 |     row_gen[1].col_gen[0].core_inst |     0.021 |
-|       RISCV_core_inst               |     0.016 |
+|       RISCV_core_inst               |     0.015 |
 |       instr_and_data_mem            |     0.003 |
 |       vram_mem                      |     0.001 |
-|     row_gen[1].col_gen[1].core_inst |     0.020 |
-|       RISCV_core_inst               |     0.015 |
+|     row_gen[1].col_gen[1].core_inst |     0.021 |
+|       RISCV_core_inst               |     0.016 |
 |       instr_and_data_mem            |     0.003 |
 |       vram_mem                      |     0.001 |
 |     row_gen[1].col_gen[2].core_inst |     0.021 |
 |       RISCV_core_inst               |     0.015 |
 |       instr_and_data_mem            |     0.003 |
 |       vram_mem                      |     0.001 |
-|     row_gen[1].col_gen[3].core_inst |     0.020 |
+|     row_gen[1].col_gen[3].core_inst |     0.021 |
 |       RISCV_core_inst               |     0.015 |
 |       instr_and_data_mem            |     0.003 |
 |       vram_mem                      |     0.001 |
 |     row_gen[2].col_gen[0].core_inst |     0.021 |
-|       RISCV_core_inst               |     0.016 |
+|       RISCV_core_inst               |     0.015 |
 |       instr_and_data_mem            |     0.003 |
 |       vram_mem                      |     0.001 |
 |     row_gen[2].col_gen[1].core_inst |     0.021 |
@@ -198,20 +198,20 @@ Table of Contents
 |       RISCV_core_inst               |     0.016 |
 |       instr_and_data_mem            |     0.003 |
 |       vram_mem                      |     0.001 |
-|     row_gen[3].col_gen[0].core_inst |     0.021 |
+|     row_gen[3].col_gen[0].core_inst |     0.020 |
 |       RISCV_core_inst               |     0.015 |
 |       instr_and_data_mem            |     0.003 |
 |       vram_mem                      |     0.001 |
-|     row_gen[3].col_gen[1].core_inst |     0.021 |
+|     row_gen[3].col_gen[1].core_inst |     0.020 |
 |       RISCV_core_inst               |     0.015 |
 |       instr_and_data_mem            |     0.003 |
 |       vram_mem                      |     0.001 |
 |     row_gen[3].col_gen[2].core_inst |     0.020 |
-|       RISCV_core_inst               |     0.015 |
+|       RISCV_core_inst               |     0.014 |
 |       instr_and_data_mem            |     0.003 |
 |       vram_mem                      |     0.001 |
 |     row_gen[3].col_gen[3].core_inst |     0.021 |
-|       RISCV_core_inst               |     0.016 |
+|       RISCV_core_inst               |     0.015 |
 |       instr_and_data_mem            |     0.003 |
 |       vram_mem                      |     0.001 |
 +-------------------------------------+-----------+

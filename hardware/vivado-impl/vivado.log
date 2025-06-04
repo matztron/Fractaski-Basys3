@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Sat May 24 16:12:20 2025
-# Process ID         : 110490
+# Start of session at: Wed Jun  4 19:34:13 2025
+# Process ID         : 52449
 # Current directory  : /home/matthias/fpga_projects/Fractaski-Basys3/hardware/vivado-impl
 # Command line       : vivado
 # Log file           : /home/matthias/fpga_projects/Fractaski-Basys3/hardware/vivado-impl/vivado.log
@@ -13,58 +13,80 @@
 # Platform           : Debian
 # Operating System   : Debian GNU/Linux 12 (bookworm)
 # Processor Detail   : AMD Ryzen 5 3600 6-Core Processor
-# CPU Frequency      : 2803.318 MHz
+# CPU Frequency      : 1862.885 MHz
 # CPU Physical cores : 6
 # CPU Logical cores  : 12
 # Host memory        : 16707 MB
 # Swap memory        : 1022 MB
 # Total Virtual      : 17730 MB
-# Available Virtual  : 13347 MB
+# Available Virtual  : 14171 MB
 #-----------------------------------------------------------
 start_gui
+open_hw_manager
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-open_checkpoint /home/matthias/fpga_projects/Fractaski-Basys3/hardware/vivado-impl/vivado-runs/post_route.dcp
-Command: open_checkpoint /home/matthias/fpga_projects/Fractaski-Basys3/hardware/vivado-impl/vivado-runs/post_route.dcp
-
-Starting open_checkpoint Task
-
-Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 7651.805 ; gain = 0.000 ; free physical = 7590 ; free virtual = 11860
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
-INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 7958.188 ; gain = 0.000 ; free physical = 7352 ; free virtual = 11628
-INFO: [Netlist 29-17] Analyzing 1089 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2024.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 8046.766 ; gain = 5.000 ; free physical = 7253 ; free virtual = 11529
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8639.848 ; gain = 0.000 ; free physical = 6707 ; free virtual = 10983
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8639.848 ; gain = 0.000 ; free physical = 6707 ; free virtual = 10983
-Read PlaceDB: Time (s): cpu = 00:00:00.74 ; elapsed = 00:00:00.73 . Memory (MB): peak = 8649.855 ; gain = 10.008 ; free physical = 6700 ; free virtual = 10977
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8649.855 ; gain = 0.000 ; free physical = 6700 ; free virtual = 10977
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:00.71 ; elapsed = 00:00:00.18 . Memory (MB): peak = 8658.855 ; gain = 9.000 ; free physical = 6692 ; free virtual = 10968
-Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.93 . Memory (MB): peak = 8658.855 ; gain = 19.008 ; free physical = 6692 ; free virtual = 10968
-Restored from archive | CPU: 1.530000 secs | Memory: 27.156036 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.98 . Memory (MB): peak = 8658.855 ; gain = 27.914 ; free physical = 6692 ; free virtual = 10968
-INFO: [Implflow 47-1266] Can not restore QoR suggestion with ID RQS_NETLIST-10-6. New suggestion ID is RQS_NETLIST-10-1.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8680.668 ; gain = 0.000 ; free physical = 6680 ; free virtual = 10956
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 736 instances were transformed.
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 32 instances
-  RAM64M => RAM64M (RAMD64E(x4)): 704 instances
+open_hw_manager: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 7887.668 ; gain = 247.895 ; free physical = 8514 ; free virtual = 12517
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
 
-INFO: [Project 1-604] Checkpoint was created with Vivado v2024.2 (64-bit) build 5239630
-open_checkpoint: Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 9081.895 ; gain = 1440.996 ; free physical = 6298 ; free virtual = 10579
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:16:47
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-19:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB7651A
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [lindex [get_cfgmem_parts {mx25l3273f-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.FILES [list "/home/matthias/fpga_projects/Fractaski-Basys3/hardware/vivado-impl/vivado-runs/fpga_bitstream.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a35t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+Mfg ID : c2   Memory Type : 20   Memory Capacity : 16   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:00.74 ; elapsed = 00:00:31 . Memory (MB): peak = 8028.324 ; gain = 10.008 ; free physical = 8227 ; free virtual = 12273
+endgroup
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat May 24 17:15:35 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  4 19:40:18 2025...

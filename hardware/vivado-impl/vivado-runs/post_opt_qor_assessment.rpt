@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-| Date         : Sat May 24 15:42:33 2025
+| Date         : Wed Jun  4 19:04:02 2025
 | Host         : debian running 64-bit Debian GNU/Linux 12 (bookworm)
 | Command      : report_qor_assessment -file ../vivado-runs/post_opt_qor_assessment.rpt
 | Design       : fpga
@@ -39,7 +39,7 @@ Table of Contents
 +----------------------------------------+-----------+--------+------+-----------+-------+--------+
 | Utilization                            |           |        |      |           |   5.0 |        |
 |    Memory LUTs                         |     30.00 |  30.67 | 2944 |      9600 |       | REVIEW |
-| *  Max LUT Combined                    |     20.00 |  35.46 | 5032 |     14189 |       | REVIEW |
+| *  Max LUT Combined                    |     20.00 |  35.41 | 5026 |     14192 |       | REVIEW |
 | Netlist                                |           |        |      |           |       |        |
 | *  DONT_TOUCH (cells/nets)             |         0 |      1 |   -  |        -  |       | REVIEW |
 | *  High Fanout Nets driven by FFs/LUTs |         5 |   4.50 |   -  |        -  |       | REVIEW |
